@@ -1,0 +1,130 @@
+.footer__logo {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-title);
+}
+
+.footer__container {
+  align-items: baseline;
+  display: flex;
+}
+
+.footer__address {
+  margin-right: 70px;
+}
+
+.footer__socials {
+  display: block;
+  margin-right: 110px;
+}
+
+.footer__socials-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-title);
+  margin-bottom: 20px;
+}
+
+.footer__socials-item {
+  background-color: #44454e;
+}
+
+.footer__icon {
+  fill: #ffffff;
+}
+.footer__socials-item {
+  border-radius: 50%;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--darkgrey-background);
+}
+.footer__contacts {
+  font-style: normal;
+}
+.footer__adress {
+  font-size: 14px;
+  line-height: 1, 71;
+  color: var(--white-title);
+}
+.footer__link {
+  font-size: 14px;
+  line-height: 1, 71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__contacts-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.subscription {
+  display: flex;
+  align-items: flex-end;
+}
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.subscription__label {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-title);
+}
+
+.subscription__input {
+  width: 358px;
+
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: var(--darkgrey-background);
+  color: whitesmoke;
+  outline: none;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .subscription__btn {
+    padding: 9.5px 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--white-title);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+
+    cursor: pointer;
+  }
+}
+.subscription__icon {
+  fill: #ffffff;
+  margin-left: 10px;
+}

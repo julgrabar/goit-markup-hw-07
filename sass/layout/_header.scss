@@ -1,0 +1,142 @@
+.header {
+  border-bottom: 2px solid #ececec;
+}
+
+.head-container {
+  display: flex;
+
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+
+  margin-left: auto;
+}
+
+.nav__item:not(:last-child),
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav__link {
+  display: inline-block;
+
+  position: relative;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+
+  transition: color 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &:not(.nav__link--opened)::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+    transform: scaleX(0);
+    transition: transform 250ms var(--cubic);
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+  &--opened {
+    position: relative;
+    color: var(--accent-color);
+  }
+
+  &--opened::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.contacts__icon {
+  fill: var(--main-text-color);
+  margin-right: 10px;
+
+  transition: fill 250ms var(--cubic);
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: #2196f3;
+  }
+}
+
+.nav__logo {
+  display: inline-block;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 95px;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+.blue-logo {
+  color: var(--accent-color);
+}
+
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+
+  transition: color 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact__item {
+  display: flex;
+}

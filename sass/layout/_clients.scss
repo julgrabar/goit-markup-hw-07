@@ -1,0 +1,27 @@
+.clients__list {
+  display: flex;
+}
+
+.clients__link {
+  display: block;
+  padding: 15px 31px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: #afb1b8;
+  transition: fill 250ms var(--cubic);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}

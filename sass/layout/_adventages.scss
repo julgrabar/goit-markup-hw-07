@@ -1,0 +1,27 @@
+.adventages {
+  display: flex;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__pic-container {
+    display: flex;
+    padding: 25px 0;
+    background-color: #f5f4fa;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
